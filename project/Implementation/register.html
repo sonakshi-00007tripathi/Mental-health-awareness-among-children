@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - MindHorizon</title>
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+    <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm">
+        
+        <!-- Logo -->
+        <h2 class="text-center text-xl font-semibold mb-4">MindHorizon</h2>
+
+        <!-- Registration Form -->
+        <form action="http://localhost/Project%20Team%20Weaver/project/php/register.php" method="POST" class="space-y-4">
+            
+            <div>
+                <label class="block text-sm font-medium">First Name</label>
+                <input type="text" name="first_name" required
+                    class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium">Email</label>
+                <input type="email" name="email" required
+                    class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+            </div>
+
+            <div>
+                <label class="block text-sm font-medium">Password</label>
+                <input type="password" name="password" required
+                    class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-400">
+            </div>
+
+            <button type="submit" 
+                class="w-full bg-green-500 text-white py-2 rounded-md font-medium hover:bg-green-600">
+                Sign Up
+            </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="flex items-center my-4">
+            <hr class="w-full border-gray-300">
+            <span class="px-2 text-gray-500 text-sm">or</span>
+            <hr class="w-full border-gray-300">
+        </div>
+
+        <!-- OAuth Signup -->
+        <div class="space-y-2">
+            <button class="w-full border py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                Sign Up with Google
+            </button>
+            <button class="w-full border py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                Sign Up with Facebook
+            </button>
+            <button class="w-full border py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                Sign Up with Apple
+            </button>
+        </div>
+
+        <!-- Login Link -->
+        <p class="text-center text-sm mt-4">
+            Already have an account? <a href="login.html" class="text-green-500 font-medium">Sign in</a>
+        </p>
+
+    </div>
+
+</body>
+</html>

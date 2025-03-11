@@ -6,53 +6,31 @@
     <title>MindHorizon - Wellness Platform</title>
     <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="bg-gradient-to-b from-green-50 to-green-100 flex items-center justify-center min-h-screen relative">
+<body class="bg-gradient-to-b from-teal-100 to-lime-100 min-h-screen flex flex-col items-center justify-center p-6 text-gray-800">
 
-    <!-- Background Glow Effect -->
-    <div class="absolute inset-0 flex items-center justify-center">
-        <div class="w-[300px] h-[300px] bg-green-300 opacity-20 rounded-full blur-3xl"></div>
-    </div>
+    <!-- Full Page Content -->
+    <div class="w-full h-full flex flex-col justify-center items-center text-center">
 
-    <!-- Main Content -->
-    <div class="relative text-center flex flex-col items-center">
-
-        <!-- Logo with Soft Glow -->
-        <div class="relative mb-6">
-            <div class="absolute inset-0 animate-pulse bg-green-300 opacity-30 rounded-full blur-2xl"></div>
-            <img src="https://via.placeholder.com/100x100" alt="MindHorizon Logo" class="w-24 mx-auto relative z-10">
-            <h1 class="text-3xl font-bold text-gray-900 mt-2">MINDHORIZON</h1>
+        <!-- Logo & Branding -->
+        <div class="mb-6 animate__animated animate__fadeInUp">
+            <img src="https://via.placeholder.com/90x90" alt="MindHorizon Logo" class="w-32 mx-auto rounded-full shadow-xl" aria-hidden="true">
+            <h1 class="text-6xl sm:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-purple-400 mt-4">MindHorizon</h1>
+            <p class="text-xl sm:text-2xl text-gray-700 mt-3">Your journey to mental wellness begins here.</p>
         </div>
 
-        <!-- Dynamic Floating Text -->
-        <div class="text-gray-700 font-medium text-lg space-y-1 mb-6">
-            <p class="animate-fadeIn opacity-90">🌿 Unlock Your Potential</p>
-            <p class="animate-fadeIn opacity-80">🧘 Find Your Inner Peace</p>
-            <p class="animate-fadeIn opacity-70">💡 Elevate Your Mind</p>
-        </div>
-
-        <!-- Buttons with Glow Effect -->
-        <div class="flex flex-col space-y-4">
-            <a href="register.html" 
-                class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-yellow-500 transition transform hover:scale-105">
-                CREATE ACCOUNT
+        <!-- Action Buttons -->
+        <div class="flex flex-col space-y-6 mt-16 animate__animated animate__fadeInUp">
+            <a href="register.html" class="bg-gradient-to-r from-teal-500 to-lime-400 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg hover:from-teal-600 hover:to-lime-500 transition-all transform hover:scale-105 duration-300">
+                Create Account
             </a>
-            <a href="login.html" 
-                class="border border-gray-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-900 hover:text-white transition transform hover:scale-105">
-                SIGN IN
+            <a href="login.html" class="border-2 border-teal-500 px-8 py-4 rounded-lg text-lg font-semibold text-teal-500 hover:bg-teal-500 hover:text-white transition-all transform hover:scale-105 duration-300">
+                Sign In
             </a>
         </div>
-    </div>
 
-    <!-- Animations -->
-    <style>
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(10px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fadeIn {
-            animation: fadeIn 2s ease-in-out infinite alternate;
-        }
-    </style>
+        <!-- Footer / Accessibility -->
+        <p class="text-gray-600 text-sm mt-6">Designed for accessibility and ease of use. <span class="font-semibold">Welcome to your journey!</span></p>
+    </div>
 
 </body>
 </html>
